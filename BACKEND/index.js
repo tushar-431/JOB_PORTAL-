@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
 
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: ["https://job-portal-4jl5.vercel.app/"],
   credentials: true,
 };
 
