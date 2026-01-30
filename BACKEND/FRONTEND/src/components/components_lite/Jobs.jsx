@@ -13,11 +13,9 @@ const Jobs = () => {
    
 
     useEffect(()=>{
-<<<<<<< HEAD
         if(!searchQuery || searchQuery.trim()===""){
-=======
+
         if(!searchQuery || searchQuery.trim() === ""){
->>>>>>> 3487efd7b73333d1e2201a8edfb8864ad20d81af
             setFilterJobs(allJobs)
             return
         }
