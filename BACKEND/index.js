@@ -37,20 +37,19 @@ app.use('/api/application', applicationRouter)
 
 // ------- code for deployment --------
 
-if(process.env.Node_Env === "production"){
-  console.log("first")
+
+
   const dirpath = path.resolve();
   app.use(express.static("./FRONTEND/dist"))
 
   app.get('/', (req,res)=>{
     res.sendFile(path.resolve(dirpath, "./FRONTEND/dist", "index.html"))
 
-  console.log("first2",dirpath )
+ 
   app.get('/', (req,res)=>{
-    console.log("first3")
     res.sendFile(path.resolve(dirpath, "./FRONTEND/dist", "index.html"))
   })
-} 
+
 
 
 app.listen(PORT, () => {
