@@ -32,7 +32,7 @@ const Jobs = () => {
         setFilterJobs(filteredJobs)
         
         
-    },[allJobs, searchQuery])
+    }},[allJobs, searchQuery])
 
     const dispatch = useDispatch()
     useEffect(()=>{
