@@ -23,16 +23,14 @@ const Home = () => {
 
 
   useGetAllJobs()
-<<<<<<< HEAD
   // const dispatch = useDispatch()
   // dispatch(setSearchedQuery(""))
-=======
+
   useEffect(()=>{
     const dispatch= useDispatch()
     dispatch(setSearchedQuery(""))
   },[])
   
->>>>>>> 3487efd7b73333d1e2201a8edfb8864ad20d81af
   return (
     <div>
         <Navbar />
